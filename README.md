@@ -1,2 +1,2 @@
 # Quarter1-Codes
-explain...
+This repository contaions codes created in the first quarter.
