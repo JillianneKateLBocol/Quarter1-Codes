@@ -1,0 +1,8 @@
+credit_score = int(input("Enter your credit score: "))
+income = int(input("Enter your annual income: "))
+years_on_job = int(input("Enter number of years at your current job: "))
+
+if credit_score >= 700 and income >= 30000 and years_on_job >= 2:
+        print("\n You are eligible for the loan. Congratulations! ")
+else:
+        print("\n You’re not eligible for the loan. Come back next time.")
