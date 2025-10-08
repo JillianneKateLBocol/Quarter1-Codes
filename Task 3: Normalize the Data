@@ -1,0 +1,8 @@
+normalized_data = {}
+
+for person, steps in data.items():
+    max_steps = max(steps)
+    normalized_steps = [round((day / max_steps) * 100) for day in steps]
+    normalized_data[person] = normalized_steps
+
+print(normalized_data)
