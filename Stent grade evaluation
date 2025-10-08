@@ -1,0 +1,26 @@
+# Program to evaluate a student's grade
+
+# Prompt the user to enter the student's score
+try:
+    score = int(input("Enter the student's score (0-100): ").strip())
+except ValueError:
+    print("Invalid input. Please enter a numeric value.")
+    exit()
+
+# Validate score is within 0 to 100
+if score < 0 or score > 100:
+    print("Score must be between 0 and 100.")
+    exit()
+
+# Determine the letter grade
+if score >= 90:
+    grade = 'A'
+elif score >= 80:
+    grade = 'B'
+elif score >= 70:
+    grade = 'C'
+else:
+    grade = 'D'
+
+# Display the result
+print(f"The student's grade is: {grade}")
