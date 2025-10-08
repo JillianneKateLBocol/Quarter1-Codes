@@ -1,0 +1,18 @@
+# Start the program
+
+import math # to use the value of pi
+
+# Step 2: Declare a variable for the radius
+
+radius = 0.0
+
+# Step 4: Ask the user for the radius
+radius = float(input("Enter the radius of the circle: "))
+
+# Step 6: Calculate the area
+area = math.pi * radius * radius
+
+# Step 7: Display the result
+print(f"The area of the circle is: {area:.2f}")
+
+End the program
