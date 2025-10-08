@@ -1,0 +1,26 @@
+# Program to check discount eligibility
+
+# Ask if the user is a student
+is_student_input = input("Are you a student? (yes/no): ").strip().lower()
+is_student = is_student_input == "yes"
+
+# Ask for the person's age
+try:
+    age = int(input("Enter your age: ").strip())
+except ValueError:
+    print("Invalid input. Age must be a number.")
+    exit()
+
+# Ask if the person has a membership card
+has_membership_input = input("Do you have a membership card? (yes/no): ").strip().lower()
+has_membership = has_membership_input == "yes"
+
+# Check if the person is eligible
+is_senior = age >= 65
+eligible_for_discount = (is_student or is_senior) and has_membership
+
+# Display the result
+if eligible_for_discount:
+    print("You are eligible for a discount.")
+else:
+    print("You are not eligible for a discount.")
