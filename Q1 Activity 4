@@ -1,0 +1,32 @@
+# Start the program
+
+# Step 2: Ask for user input
+full_name = input("Enter your full name (First Name, Middle Name, Last Name): ")
+
+# Step 3: Split the input into parts
+    first_name, middle_name, last_name = [part.strip() for part in full_name.split(",")]
+
+
+    # Step 4: Capitalize each name
+    first_name = first_name.capitalize()
+    middle_name = middle_name.capitalize()
+    last_name = last_name.capitalize()
+
+
+    # Step 5: Convert middle name to initial + period
+    middle_initial = middle_name[0] + "."
+
+    # Step 6: Rearrange the name
+    formatted_name = f"{last_name}, {first_name} {middle_initial}"
+
+    # Step 7: Display the result
+    print("Formatted name:", formatted_name)
+
+
+except ValueError:
+    print("Invalid input. Please enter your name in the format: First Name, Middle Name, Last Na
+me.")
+
+
+
+# End the program
